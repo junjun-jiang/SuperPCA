@@ -13,7 +13,6 @@
 
 clc;clear;close all
 addpath('.\libsvm-3.21\matlab');
-addpath('J:\Could20171109 V2\Cloud\Remote Sensing\Classifcation\HyperData');
 addpath(genpath(cd));
 
 num_PC           =   30;  % THE OPTIMAL PCA DIMENSION
