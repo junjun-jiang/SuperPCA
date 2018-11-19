@@ -29,7 +29,7 @@ if strcmp(database,'Indian')
 elseif strcmp(database,'Salinas')
     load Salinas_corrected;load Salinas_gt;load Salinas_randp
     data3D = salinas_corrected;        
-    label_gt = salinas_gt;        paviaU = paviaU./max(paviaU(:));
+    label_gt = salinas_gt;       
 elseif strcmp(database,'PaviaU')    
     load PaviaU;load PaviaU_gt;load PaviaU_randp; 
     data3D = paviaU;        label_gt = paviaU_gt;
