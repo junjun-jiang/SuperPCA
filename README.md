@@ -1,7 +1,5 @@
 The code is for the work:
 
-[1] Jiang, J. Ma, C. Chen, Z. Wang, Z. Cai, and L. Wang, “SuperPCA: A Superpixelwise Principal Component Analysis Approach for Unsupervised Feature Extraction of Hyperspectral Imagery,” IEEE Transactions on Geoscience and Remote Sensing, vol. 56, no. 8, pp. 4581-4593, 2018
-
 ```
 @article{jiang2018superpca,
   title={SuperPCA: A Superpixelwise PCA Approach for Unsupervised Feature Extraction of Hyperspectral Imagery},
