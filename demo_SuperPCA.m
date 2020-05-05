@@ -15,7 +15,7 @@ clc;clear;close all
 addpath('.\libsvm-3.21\matlab');
 addpath(genpath(cd));
 
-num_PC           =   30;  % THE OPTIMAL PCA DIMENSION
+num_PC           =   30;  % THE OPTIMAL PCA DIMENSION. Indian:100, PaviaU:20, Salinas:100,
 num_Pixel        =   100; % THE OPTIMAL Number of Superpixel
 trainpercentage  =   30;  % Training Number per Class
 iterNum          =   10;    % The Iteration Number
