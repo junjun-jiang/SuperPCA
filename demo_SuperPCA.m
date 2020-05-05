@@ -16,7 +16,7 @@ addpath('.\libsvm-3.21\matlab');
 addpath(genpath(cd));
 
 num_PC           =   30;  % THE OPTIMAL PCA DIMENSION.
-num_Pixel        =   100; % THE OPTIMAL Number of Superpixel. Indian:100, PaviaU:20, Salinas:100
+% num_Pixel        =   100; % THE OPTIMAL Number of Superpixel. Indian:100, PaviaU:20, Salinas:100
 trainpercentage  =   30;  % Training Number per Class
 iterNum          =   10;  % The Iteration Number
 
@@ -26,13 +26,15 @@ database         =   'Indian';
 if strcmp(database,'Indian')
     load Indian_pines_corrected;load Indian_pines_gt;load Indian_pines_randp 
     data3D = indian_pines_corrected;        label_gt = indian_pines_gt;
+    num_Pixel        =   100;
 elseif strcmp(database,'Salinas')
     load Salinas_corrected;load Salinas_gt;load Salinas_randp
-    data3D = salinas_corrected;        
-    label_gt = salinas_gt;       
+    data3D = salinas_corrected;        label_gt = salinas_gt;
+    num_Pixel        =   100;
 elseif strcmp(database,'PaviaU')    
     load PaviaU;load PaviaU_gt;load PaviaU_randp; 
     data3D = paviaU;        label_gt = paviaU_gt;
+    num_Pixel        =   20;
 end
 data3D = data3D./max(data3D(:));
 
